@@ -1,8 +1,16 @@
+.welcome-note{
+    font-family: fantasy;
+    text-decoration: double var(--skin-color);
+    background-color:none;
+    text-decoration: inline;
+   color:rgb(75, 52, 8);
+   
+
+}
 @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;500;600;700&display=swap');
 /* additional code*/
 body.dark {
-    background-color: black;
-    color: white;
+    background-color: black;  color: white;
   }
   
   .day-nigh {
@@ -14,7 +22,12 @@ body.dark {
     background-color: black;
     color: white;
   }
-  
+  .container-home{
+    text-align:center;
+    position:relative;
+    display:-webkit-inline-flex;
+
+  }
 
 
 
@@ -37,26 +50,14 @@ body.dark {
     
 
 }
-@keyframes blink{
-    50%{
-        opacity:0
-    }
-    80%{
-        opacity: 0.5
-    }
-}
-.welcome-note{
-    font-family: cursive;
-    text-decoration: double var(--skin-color);
-    background-color:rgb(255,0,0);
-    text-decoration: inline;
-   color:skyblue;
-    animation: blink 1s linear infinite;
 
-}
-.container{
-    background-color:rgb(255,255,255)
-}
+
+
+
+/*.container{
+    /* background-color:rgb(255,255,255)
+ } */
+
 a{
     text-decoration:underline;
 }
@@ -110,7 +111,7 @@ ul {
 }
 
 .section {
-    background: var(--bg-black-900);
+    /* background: var(--bg-black-900); */
     min-height: 100vh;
     display: block;
     padding: 0 10px;
@@ -124,7 +125,7 @@ ul {
     overflow-y: auto;
     overflow-x: hidden;
     transition: all 0.3s ease;
-    color: var(--text-black-700);
+    /* color: var(--text-black-700); */
 }
 .name{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -195,9 +196,20 @@ ul {
     overflow: auto;
     
 }
+.table{
+    width:100%;
+    background-color:none;
+    
+
+}
+.aside{
+    background-color:transparent;
+
+}
 .aside .navbar-items{
     height:45px;
     padding-bottom: 20px;
+    
 }
 .aside .navbar-items a {
     color: var(--text-black-900);
@@ -210,6 +222,7 @@ ul {
     flex-direction: col;
     column-gap: 20px;
     align-items: center;
+
 }
 
 .aside .navbar-items i {
@@ -336,6 +349,10 @@ h3.my-profession {
     margin-bottom: 30px;
     font-size: 20px;
     color: var(--text-black-700);
+    font-size:medium;
+
+
+
 }
 
 .home-info .social-media {
@@ -375,6 +392,8 @@ h3.my-profession {
     /* background-color: red; */
     text-align: center;
     position: relative;
+    display: grid;
+
 }
 
 .home .home-img img {
@@ -668,6 +687,7 @@ h3.my-profession {
     border-radius: 10px;
     border: 6px solid var(--bg-black-100);
 }
+
 
 .item-page {
     position: relative;
